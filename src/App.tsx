@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Route 21</h2>
+      <h2>Route 21 Arrival Countdown*</h2>
         <p>Next Bus (based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf" target="_blank" rel="noreferrer">timetable</a>)</p>
         <table>
           <thead>
@@ -60,7 +60,8 @@ function App() {
           </tbody>
         </table>
         <footer>
-          <p>by <a href="https://severalpens.com">severalpens.com</a></p>
+        <p>*Unofficial guide only. See <a className="underline" href="https://www.ptv.vic.gov.au/route/15169/21-ballarat-station-buninyong-via-federation-university/">Official Site</a></p>
+        <p>by <a href="https://severalpens.com">severalpens.com</a></p>
         </footer>
         <div className='source-code'>
           <p>Source code: <a href="https://github.com/severalpens/route21v5">GitHub</a></p>
