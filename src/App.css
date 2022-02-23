@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+a{
+  color:inherit;
+  text-decoration: underline;
+  
+}
+
+table{
+  border-style: solid;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+
+tr{
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+}
+
+.c1{
+  width: 300px;
+  padding: 20px;
+}
+
+.c2{
+  width: 150px;
+  text-align: left;
+  padding: 20px;
+}
+
+.c3{
+  width: 100px;
+  text-align: right;
+  padding: 20px;
+}
