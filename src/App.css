@@ -72,3 +72,16 @@ tr{
   text-align: right;
   padding: 20px;
 }
+
+footer {
+  padding-top: 100px;
+  font-size: smaller;
+}
+
+footer a{
+  text-decoration: inherit;
+}
+
+.source-code{
+  font-size: small;
+}

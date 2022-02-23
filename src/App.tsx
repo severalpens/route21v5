@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>Route 21</h2>
-        <p>Next Bus (based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf">timetable</a>)</p>
+        <p>Next Bus (based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf" target="_blank" rel="noreferrer">timetable</a>)</p>
         <table>
           <thead>
             <tr>
@@ -59,6 +59,12 @@ function App() {
             </tr>
           </tbody>
         </table>
+        <footer>
+          <p>by <a href="https://severalpens.com">severalpens.com</a></p>
+        </footer>
+        <div className='source-code'>
+          <p>Source code: <a href="https://github.com/severalpens/route21v5">GitHub</a></p>
+        </div>
       </header>
     </div>
   );
