@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h2>Route 21 Arrival Countdown*</h2>
-        <p>Next Bus (based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf" target="_blank" rel="noreferrer">timetable</a>)</p>
+      <h2>Route 21 Arrival Countdown</h2>
+        <p>Next Bus based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf" target="_blank" rel="noreferrer">timetable</a></p>
         <table>
           <thead>
             <tr>
@@ -40,27 +40,34 @@ function App() {
             <tr>
               <td className="c1">Buninyong (terminus)</td>
               <td className="c2">Inbound</td>
-              <td className="c3">{buninyong}</td>
+              <td className="c3">
+                  {buninyong}
+              </td>
             </tr>
             <tr>
               <td className="c1">Fed Uni</td>
               <td className="c2">Inbound</td>
-              <td className="c3">{fedUniInbound}</td>
+              <td className="c3">
+                {fedUniInbound}
+              </td>
             </tr>
             <tr>
               <td className="c1">Fed Uni</td>
               <td className="c2">Outbound</td>
-              <td className="c3">{fedUniOutbound}</td>
+              <td className="c3">
+                {fedUniOutbound}
+              </td>
             </tr>
             <tr>
               <td className="c1">Ballarat Interchange</td>
               <td className="c2">Outbound</td>
-              <td className="c3">{ballarat}</td>
+              <td className="c3">
+                {ballarat}
+              </td>
             </tr>
           </tbody>
         </table>
         <footer>
-        <p>*Unofficial guide only. See <a className="underline" href="https://www.ptv.vic.gov.au/route/15169/21-ballarat-station-buninyong-via-federation-university/">Official Site</a></p>
         <p>by <a href="https://severalpens.com">severalpens.com</a></p>
         </footer>
         <div className='source-code'>
