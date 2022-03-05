@@ -46,6 +46,7 @@ export default class TimeCalculator {
 
     
     getNextTimetableSeconds(dt: Date) {
+        
         let timesRemainingToday = this.timetableToday.filter((t: { secondsFromMidnight: number; }) => {
             let tEpochSeconds = this.midnightEpochSeconds + t.secondsFromMidnight;
             return tEpochSeconds > Math.floor(dt.getTime() / 1000);
@@ -68,8 +69,9 @@ export default class TimeCalculator {
     next(locationId: number, directionId: number) {
         let dt = new Date();
         this.midnightEpochSeconds = this.getMidnight();
+        let dayId = dt.getDay();
 
-        switch (dt.getDay()) {
+        switch (dayId) {
             case 5: //Friday
                 this.timetableToday = this.setTimetable(1, locationId, directionId);
                 this.timetableTomorrow = this.setTimetable(6, locationId, directionId);
@@ -77,6 +79,7 @@ export default class TimeCalculator {
 
             case 6: //Saturday
                 this.timetableToday = this.setTimetable(6, locationId, directionId);
+                
                 this.timetableTomorrow = this.setTimetable(0, locationId, directionId);
                 break;
 
@@ -90,10 +93,33 @@ export default class TimeCalculator {
                 this.timetableTomorrow = this.setTimetable(1, locationId, directionId);
                 break;
         }
-
+        
         let nowEpochSeconds = Math.floor(dt.getTime() / 1000);
-        let s = this.getNextTimetableSeconds(dt) - nowEpochSeconds;
+        let s1 = 0;
+        
+        let timesRemainingToday = this.timetableToday.filter((t: { secondsFromMidnight: number; }) => {
+            let tEpochSeconds = this.midnightEpochSeconds + t.secondsFromMidnight;
+            return tEpochSeconds > Math.floor(dt.getTime() / 1000);
+        });
+
+        if(timesRemainingToday[0]){
+            if(dayId === 6 && locationId === 0 && directionId === 0){
+                console.log('getting times remaining today');
+                console.log(timesRemainingToday);
+            }
+            s1 = this.midnightEpochSeconds + timesRemainingToday[0].secondsFromMidnight;
+        }
+        else{
+            //If no times remaining today, get first arrival from tomorrow's timetable.
+            let nextMidnight = this.midnightEpochSeconds + (24 * 60 * 60);
+            let firstArrivalTomorrow = this.timetableTomorrow[0].secondsFromMidnight;
+            s1 = nextMidnight + firstArrivalTomorrow;
+        }
+
+      //  let s = this.getNextTimetableSeconds(dt) - nowEpochSeconds;
+        let s = s1 - nowEpochSeconds;
         return this.getFormattedTime(s);
+
     }
 
 }

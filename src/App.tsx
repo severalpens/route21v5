@@ -1,12 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import TimeCalculator from './TimeCalculator';
 
 function App() {
 
-  const [tm, setTm] = useState('')
   const [buninyong, setBuninyong] = useState('')
   const [fedUniInbound, setFedUniInbound] = useState('')
   const [fedUniOutbound, setFedUniOutbound] = useState('')
@@ -15,10 +12,10 @@ function App() {
   useEffect(() => {
     setTimeout(async () => {
       let tc = new TimeCalculator();
-      setBuninyong(tc.next(1, 1))
-      setFedUniInbound(tc.next(0, 1))
-      setFedUniOutbound(tc.next(0, 0))
-      setBallarat(tc.next(2, 0))
+      setBuninyong(tc.next(1, 1));
+      setFedUniInbound(tc.next(0, 1));
+      setFedUniOutbound(tc.next(0, 0));
+      setBallarat(tc.next(2, 0));
     }, 1000);
   });
 

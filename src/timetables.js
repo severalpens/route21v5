@@ -175,6 +175,31 @@ let timetables =[
     {dayId:6,locationId:0,directionId:1,hr:19,mn:16,secondsFromMidnight:69360},
     {dayId:6,locationId:0,directionId:1,hr:19,mn:46,secondsFromMidnight:71160},
     {dayId:6,locationId:0,directionId:1,hr:20,mn:47,secondsFromMidnight:74820},
+    {dayId:6,locationId:0,directionId:0,hr:7,mn:22,secondsFromMidnight:26520},
+    {dayId:6,locationId:0,directionId:0,hr:8,mn:22,secondsFromMidnight:30120},
+    {dayId:6,locationId:0,directionId:0,hr:8,mn:52,secondsFromMidnight:31920},
+    {dayId:6,locationId:0,directionId:0,hr:9,mn:21,secondsFromMidnight:33660},
+    {dayId:6,locationId:0,directionId:0,hr:9,mn:52,secondsFromMidnight:35520},
+    {dayId:6,locationId:0,directionId:0,hr:10,mn:22,secondsFromMidnight:37320},
+    {dayId:6,locationId:0,directionId:0,hr:10,mn:52,secondsFromMidnight:39120},
+    {dayId:6,locationId:0,directionId:0,hr:11,mn:22,secondsFromMidnight:40920},
+    {dayId:6,locationId:0,directionId:0,hr:11,mn:52,secondsFromMidnight:42720},
+    {dayId:6,locationId:0,directionId:0,hr:12,mn:22,secondsFromMidnight:44520},
+    {dayId:6,locationId:0,directionId:0,hr:12,mn:52,secondsFromMidnight:46320},
+    {dayId:6,locationId:0,directionId:0,hr:13,mn:22,secondsFromMidnight:48120},
+    {dayId:6,locationId:0,directionId:0,hr:13,mn:52,secondsFromMidnight:49920},
+    {dayId:6,locationId:0,directionId:0,hr:14,mn:22,secondsFromMidnight:51720},
+    {dayId:6,locationId:0,directionId:0,hr:14,mn:52,secondsFromMidnight:53520},
+    {dayId:6,locationId:0,directionId:0,hr:15,mn:22,secondsFromMidnight:55320},
+    {dayId:6,locationId:0,directionId:0,hr:15,mn:52,secondsFromMidnight:57120},
+    {dayId:6,locationId:0,directionId:0,hr:16,mn:22,secondsFromMidnight:58920},
+    {dayId:6,locationId:0,directionId:0,hr:16,mn:52,secondsFromMidnight:60720},
+    {dayId:6,locationId:0,directionId:0,hr:17,mn:22,secondsFromMidnight:62520},
+    {dayId:6,locationId:0,directionId:0,hr:17,mn:52,secondsFromMidnight:64320},
+    {dayId:6,locationId:0,directionId:0,hr:18,mn:22,secondsFromMidnight:66120},
+    {dayId:6,locationId:0,directionId:0,hr:18,mn:52,secondsFromMidnight:67920},
+    {dayId:6,locationId:0,directionId:0,hr:19,mn:22,secondsFromMidnight:69720},
+    {dayId:6,locationId:0,directionId:0,hr:20,mn:22,secondsFromMidnight:73320},
     {dayId:6,locationId:2,directionId:0,hr:6,mn:53,secondsFromMidnight:24780},
     {dayId:6,locationId:2,directionId:0,hr:7,mn:53,secondsFromMidnight:28380},
     {dayId:6,locationId:2,directionId:0,hr:8,mn:23,secondsFromMidnight:30180},
@@ -247,6 +272,8 @@ let timetables =[
     {dayId:0,locationId:2,directionId:0,hr:17,mn:53,secondsFromMidnight:64380},
     {dayId:0,locationId:2,directionId:0,hr:18,mn:53,secondsFromMidnight:67980},
     ]
+    
+    
     
 
 export default timetables;
