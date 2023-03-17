@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h2>Route 21 Arrival Countdown</h2>
-        <p>Next Bus based on <a href="https://d309ul1fvo6zfp.cloudfront.net/1645069629968/bus-15169-2021-12-19-2022-12-31.pdf" target="_blank" rel="noreferrer">timetable</a></p>
+        <p>Next Bus based on <a href="https://www.ptv.vic.gov.au/route/15169/21-ballarat-station-buninyong-via-federation-university/" target="_blank" rel="noreferrer">timetable</a></p>
         <table>
           <thead>
             <tr>
