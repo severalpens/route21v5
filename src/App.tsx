@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import TimeCalculator from './TimeCalculator';
-
+import NextRecycleBinDay from './NextRecycleBinDay';
 function App() {
 
   const [buninyong, setBuninyong] = useState('')
@@ -65,6 +65,15 @@ function App() {
             </tr>
           </tbody>
         </table>
+        <div>
+    <h5>Next Recycle Bin Day In:</h5>
+    <div>
+    {new NextRecycleBinDay().GetDaysToNextRecycleBinDay()} days
+    </div>
+    <div>
+      ({new NextRecycleBinDay().GetNextRecycleBinDay()})
+    </div>
+        </div>
         <footer>
         <p>by <a href="https://severalpens.com">severalpens.com</a></p>
         </footer>
